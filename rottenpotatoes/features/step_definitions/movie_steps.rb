@@ -46,6 +46,4 @@ end
 Then /I should see all the movies/ do
   # Make sure that all the movies in the app are visible in the table
   expect(Movie.count).to eq 10
-
-  #page.should have_selector('tbody/tr', count: Movie.count) 
 end

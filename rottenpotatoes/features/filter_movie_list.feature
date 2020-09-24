@@ -25,9 +25,7 @@ Background: movies have been added to database
 Scenario: restrict to movies with 'PG' or 'R' ratings
   
   When I check the following ratings: PG, R
-  
   And I uncheck the following ratings: PG-13, G
-  
   And I press "ratings_submit"
   
   Then I should see "Raiders of the Lost Ark"
